@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import './BannerStyle.css';
 
 // import './styles.css';
 
@@ -22,7 +23,7 @@ const BannerSlider = () => {
         <>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-        <div className="h-screen flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center ">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -31,8 +32,8 @@ const BannerSlider = () => {
           >
             <source src={videoSource} type="video/mp4" />
           </video>
-          <div className="absolute text-white text-4xl font-bold">
-            Slide 1 - Video
+          <div className="absolute flex items-center justify-center text-white  bg-black bg-opacity-50 w-full h-full text-center">
+            <p className='px-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic quaerat maiores laborum accusantium reiciendis deleniti. Quae accusamus minus consectetur vero distinctio, hic ad nihil, dolorum amet tempora veritatis a.</p>
           </div>
         </div>
       </SwiperSlide>
@@ -44,8 +45,8 @@ const BannerSlider = () => {
             src={image1Source}
             alt="Slide 2"
           />
-          <div className="absolute text-white text-4xl font-bold">
-            Slide 2 - Image
+          <div className="absolute flex items-center justify-center text-white bg-black bg-opacity-50 w-full h-full text-center">
+            <p className='px-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic quaerat maiores laborum accusantium reiciendis deleniti. Quae accusamus minus consectetur vero distinctio, hic ad nihil, dolorum amet tempora veritatis a.</p>
           </div>
         </div>
       </SwiperSlide>
@@ -57,8 +58,8 @@ const BannerSlider = () => {
             src={image2Source}
             alt="Slide 3"
           />
-          <div className="absolute text-white text-4xl font-bold">
-            Slide 3 - Image
+          <div className="absolute flex items-center justify-center text-white  bg-black bg-opacity-50 w-full h-full text-center">
+            <p className='px-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic quaerat maiores laborum accusantium reiciendis deleniti. Quae accusamus minus consectetur vero distinctio, hic ad nihil, dolorum amet tempora veritatis a.</p>
           </div>
         </div>
       </SwiperSlide>
