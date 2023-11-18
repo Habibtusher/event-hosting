@@ -20,7 +20,7 @@ const BannerSlider = () => {
 
 
     return (
-        <>
+        <div className='z-4'>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
         <div className="h-screen flex items-center justify-center ">
@@ -64,7 +64,7 @@ const BannerSlider = () => {
         </div>
       </SwiperSlide>
         </Swiper>
-      </>
+      </div>
     );
 };
 
