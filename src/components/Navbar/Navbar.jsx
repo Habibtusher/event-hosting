@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CiTimer } from "react-icons/ci";
+import logo from "../../assets/image/logo.png";
 
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
       <div className="rounded-b-3xl shadow-md bg-white w-[1180px] mx-auto w px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 pt-4 pb-4">
           <div className="flex items-center">
-            <div className="text-black font-bold text-xl">Your Logo</div>
+            <div className="text-black font-bold text-xl w-14 h-8"><img className='w-full h-full object-cover' src={logo} alt="" /></div>
             <div className="hidden md:ml-10 md:flex font-normal text-sm space-x-4 text-black">
               <a
                 href="#"

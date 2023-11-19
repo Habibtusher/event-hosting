@@ -4,6 +4,8 @@ import CollaborateSection from "../components/CollaborateSection/CollaborateSect
 import EventSection from "../components/EventSection/EventSection";
 import FriendsOfMumbaiSection from "../components/FriendsOfMumbaiSection/FriendsOfMumbaiSection";
 import FriendsOfMumbaiSlide from "../components/FriendsOfMumbaiSection/FriendsOfMumbaiSlide/FriendsOfMumbaiSlide";
+import Partners from "../components/Partners/Partners";
+import Sponsor from "../components/Sponsor/Sponsor";
 import WorldRecord from "../components/WorldRecordSection/WorldRecord";
 import Navbar from './../components/Navbar/Navbar';
 
@@ -21,6 +23,8 @@ const MainLayout = () => {
             <FriendsOfMumbaiSection /> 
             <FriendsOfMumbaiSlide />
             <CollaborateSection />
+            <Sponsor />
+            <Partners />
            </div>
             {/* <SlickCarousel className="mb-8" /> */}
         </div>
