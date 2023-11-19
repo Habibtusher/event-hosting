@@ -21,24 +21,26 @@ const AboutMouseSlider = () => {
       modules={[Mousewheel]}
       className="h-screen"
     >
-      <SwiperSlide>
-        <img className='w-[200px]' src={image1Source} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-      <img className='w-[200px]' src={image2Source} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-       <img src={image1Source} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-       <img src={image2Source} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-       <img src={image1Source} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-       <img src={image1Source} alt="" />
-      </SwiperSlide>
+      <SwiperSlide style={{ height: '300px' }}> {/* Set height for the first image */}
+          <img className='w-[200px]' src={image1Source} alt="" />
+        </SwiperSlide>
+        <SwiperSlide style={{ height: '400px' }}> {/* Set height for the second image */}
+          <img className='w-[200px]' src={image2Source} alt="" />
+        </SwiperSlide>
+        <SwiperSlide style={{ height: '350px' }}>
+          <img src={image1Source} alt="" />
+        </SwiperSlide>
+        <SwiperSlide style={{ height: '250px' }}>
+          <img src={image2Source} alt="" />
+        </SwiperSlide>
+        <SwiperSlide style={{ height: '320px' }}>
+          <img src={image1Source} alt="" />
+        </SwiperSlide>
+        <SwiperSlide style={{ height: '280px' }}>
+          <img src={image1Source} alt="" />
+        </SwiperSlide>
+        {/* Add more slides as needed */}
+     
       {/* Add more slides as needed */}
     </Swiper>
     </div>

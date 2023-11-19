@@ -7,6 +7,7 @@ import FriendsOfMumbaiSlide from "../components/FriendsOfMumbaiSection/FriendsOf
 import WorldRecord from "../components/WorldRecordSection/WorldRecord";
 import Navbar from './../components/Navbar/Navbar';
 
+
 const MainLayout = () => {
     return (
         <div>
@@ -14,6 +15,7 @@ const MainLayout = () => {
             <BannerSlider />
            <div className="myContainer">
            <About />
+           
             <EventSection />
             <WorldRecord />
             <FriendsOfMumbaiSection /> 
