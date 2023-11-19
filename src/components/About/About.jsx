@@ -1,5 +1,6 @@
 import { CgMouse } from "react-icons/cg";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import AboutMouseSlider from "./AboutMouseSlider";
 
 
 const About = () => {
@@ -19,7 +20,7 @@ const About = () => {
             {/* About section start  */}
             <div>
                 <div className="w-[1080px] m-auto">
-                    <div>
+                    <div className="flex justify-between gap-4">
                         <div className="w-1/2">
                             <h2 className="text-[40px] font-bold colorBlack"> Everyone's invited </h2>
                             <div className="mt-[30px]">
@@ -32,8 +33,8 @@ const About = () => {
                             </div>
                             <button className="btn btn-primari mt-8">Knkow more</button>
                         </div>
-                        <div className="w-1/2">
-
+                        <div className="w-1/2 ">
+                            <AboutMouseSlider />
                         </div>
                     </div>
                 </div>

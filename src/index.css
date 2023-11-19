@@ -41,3 +41,12 @@
 .fiveColor {
   color: #7fbb5b;
 }
+
+/* Add this CSS to your styles */
+.slick-slider-gap {
+  margin: 0 -30px;
+}
+
+.slick-slide-gap {
+  margin-right: 30px;
+}
