@@ -17,11 +17,12 @@ const EventSlider = () => {
     <div>
       <Swiper
         slidesPerView={4}  
-        paceBetween={80}      
+        spaceBetween={100}      
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
+        
       >
         <SwiperSlide>
           <div>

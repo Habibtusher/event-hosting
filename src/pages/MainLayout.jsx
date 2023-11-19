@@ -1,13 +1,17 @@
 import About from "../components/About/About";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
 import EventSection from "../components/EventSection/EventSection";
+import Navbar from './../components/Navbar/Navbar';
 
 const MainLayout = () => {
     return (
-        <div className="myContainer">
+        <div>
+            <Navbar />
             <BannerSlider />
-            <About />
+           <div className="myContainer">
+           <About />
             <EventSection />
+           </div>
             {/* <SlickCarousel className="mb-8" /> */}
         </div>
     );
