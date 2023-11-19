@@ -1,6 +1,7 @@
-import About from "../components/About/About";
+// import About from "../components/About/About";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
-import EventSection from "../components/EventSection/EventSection";
+import WorldRecord from "../components/WorldRecordSection/WorldRecord";
+// import EventSection from "../components/EventSection/EventSection";
 import Navbar from './../components/Navbar/Navbar';
 
 const MainLayout = () => {
@@ -9,8 +10,9 @@ const MainLayout = () => {
             <Navbar />
             <BannerSlider />
            <div className="myContainer">
-           <About />
-            <EventSection />
+           {/* <About /> */}
+            {/* <EventSection /> */}
+            <WorldRecord />
            </div>
             {/* <SlickCarousel className="mb-8" /> */}
         </div>

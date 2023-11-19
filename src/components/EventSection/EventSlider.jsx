@@ -3,6 +3,8 @@ import "swiper/css/pagination";
 // import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 // import './styles.css';
+import { Autoplay } from 'swiper/modules';
+
 import { BsArrowRightCircle } from "react-icons/bs";
 
 import image1Source from "../../assets/image/event1.png";
@@ -14,15 +16,29 @@ import image6Source from "../../assets/image/event6.png";
 
 const EventSlider = () => {
   return (
-    <div>
+    <div className="lg:ml-[90px]">
       <Swiper
         slidesPerView={4}  
-        spaceBetween={100}      
+        spaceBetween={240}      
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}
-        
+        }} 
+        modules={[Autoplay]}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}       
       >
         <SwiperSlide>
           <div>
