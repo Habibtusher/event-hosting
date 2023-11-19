@@ -5,7 +5,7 @@ import WorldRecordImg from "../../assets/image/WorldRecord.jpeg";
 const WorldRecord = () => {
   return (
     <div>
-      <div className="relative h-full md:h-[440px] mt-8">
+      <div className="relative h-full md:h-[440px] mt-20">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-[40px]"></div>
         <img
           className="w-full h-full rounded-3xl md:rounded-[40px] object-cover"

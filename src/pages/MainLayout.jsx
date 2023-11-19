@@ -1,10 +1,12 @@
-// import About from "../components/About/About";
+import About from "../components/About/About";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
+import CollaborateSection from "../components/CollaborateSection/CollaborateSection";
+import EventSection from "../components/EventSection/EventSection";
 import FriendsOfMumbaiSection from "../components/FriendsOfMumbaiSection/FriendsOfMumbaiSection";
+import FriendsOfMumbaiSlide from "../components/FriendsOfMumbaiSection/FriendsOfMumbaiSlide/FriendsOfMumbaiSlide";
 import WorldRecord from "../components/WorldRecordSection/WorldRecord";
-// import EventSection from "../components/EventSection/EventSection";
 import Navbar from './../components/Navbar/Navbar';
-import About from './../components/About/About';
+
 
 const MainLayout = () => {
     return (
@@ -13,9 +15,12 @@ const MainLayout = () => {
             <BannerSlider />
            <div className="myContainer">
            <About />
-            {/* <EventSection /> */}
+           
+            <EventSection />
             <WorldRecord />
             <FriendsOfMumbaiSection /> 
+            <FriendsOfMumbaiSlide />
+            <CollaborateSection />
            </div>
             {/* <SlickCarousel className="mb-8" /> */}
         </div>
