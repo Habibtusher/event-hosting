@@ -1,5 +1,6 @@
 // import About from "../components/About/About";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
+import FriendsOfMumbaiSection from "../components/FriendsOfMumbaiSection/FriendsOfMumbaiSection";
 import WorldRecord from "../components/WorldRecordSection/WorldRecord";
 // import EventSection from "../components/EventSection/EventSection";
 import Navbar from './../components/Navbar/Navbar';
@@ -13,6 +14,7 @@ const MainLayout = () => {
            {/* <About /> */}
             {/* <EventSection /> */}
             <WorldRecord />
+            <FriendsOfMumbaiSection /> 
            </div>
             {/* <SlickCarousel className="mb-8" /> */}
         </div>

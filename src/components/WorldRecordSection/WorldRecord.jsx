@@ -26,7 +26,7 @@ const WorldRecord = () => {
                 <p className="text-[13px] mt-2 font-normal">At Mumbai Fest 2024, 8,000 professionally trained Lezhim dancers will perform together in the soul of the country with the intent of setting a new Guinness World Record.</p>
             </div>
             <div className="md:w-[40%]">
-                <button className="md:ml-[124px] mt-[20px] w-[200px] h-[50px] bg-black text-white text-left px-3 flex flex-row justify-between items-center rounded-md hover:rounded-full hover:justify-center hover:items-center hover:bg-[#e26e39] hover:gap-3 transition duration-700 ease-in-out"><span className="text-xs font-thin">Know More</span> <FaRegArrowAltCircleRight className="text-white" /></button>
+                <button className="md:ml-[132px] mt-[20px] w-[200px] h-[50px] bg-black text-white text-left px-3 flex flex-row justify-between items-center rounded-md hover:rounded-full hover:justify-center hover:items-center hover:bg-[#e26e39] hover:gap-3 transition duration-700 ease-in-out"><span className="text-xs font-thin">Know More</span> <FaRegArrowAltCircleRight className="text-white" /></button>
             </div>
         </div>
 
