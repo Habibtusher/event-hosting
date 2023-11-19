@@ -1,9 +1,9 @@
 // eslint-disable-next-line react/prop-types
-const Images = ({ height, src }) => {
+const Images = ({ height, src,width='180' }) => {
   return (
     <div>
-      <div style={{ height: `${height}px`, width: "180px" }}>
-        <img className="w-full h-full object-cover rounded-3xl" src={src} alt="" />
+      <div style={{ height: `${height}px`, width: `${width}px` }}>
+        <img className="w-full h-full object-cover rounded-2xl" src={src} alt="" />
       </div>
     </div>
   );
