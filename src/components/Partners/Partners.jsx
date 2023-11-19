@@ -10,7 +10,7 @@ const Partners = () => {
     return (
         <div className="mb-12 mt-14">
             <div className="w-full h-[220px] border-2 border-black rounded-l-[30px] ml-[100px] relative">
-                <h2 className="font-bold text-[30px] text-end">Partners</h2>
+                <h2 className="font-bold text-[30px] text-center ml-[800px] mt-[70px]">Partners</h2>
             </div>
             <div >
             <Swiper

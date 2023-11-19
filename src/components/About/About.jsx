@@ -1,14 +1,15 @@
 import { CgMouse } from "react-icons/cg";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
-import ImagesDiv from "./ImagesDiv";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import ImagesRight from "./ImageRight";
+import ImagesDiv from "./ImagesDiv";
 
 const About = () => {
   return (
     <div>
       {/* Mouse icon  */}
-      <div className="flex justify-center items-center">
+      <div id="about" className="flex justify-center items-center">
         <div className="w-[140px] h-[140px] rounded-full flex flex-col  items-center  bg-white z-20 relative -mt-[70px]">
           <div className="mt-[20px]">
             <MdKeyboardArrowUp className="ml-[5.4px] -mb-[3px]" />
@@ -44,7 +45,7 @@ const About = () => {
                   putting the earth first.
                 </p>
               </div>
-              <button className="btn btn-primari mt-8">Knkow more</button>
+              <button className=" mt-[40px] w-[200px] h-[50px] bg-black text-white text-left px-3 flex flex-row justify-between items-center rounded-md hover:rounded-full hover:justify-center hover:items-center hover:bg-[#e26e39] hover:gap-3 transition duration-700 ease-in-out"><span className="text-xs font-thin">Know More</span> <FaRegArrowAltCircleRight className="text-white" /></button>
             </div>
             <div
               className="w-1/2"

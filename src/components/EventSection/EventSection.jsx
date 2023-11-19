@@ -4,7 +4,7 @@ import EventSlider from "./EventSlider";
 
 const EventSection = () => {
     return (
-        <div className="mb-12">
+        <div id="Events" className="mb-12">
             <div className="md:w-[1080px] w-full  md:h-[300px] h-full border-2 rounded-[32px] border-[#707070] m-auto ">
                 <div className="flex flex-row justify-between px-2 mt-10 w-[992px] m-auto ">
                     <h2 className="font-bold text-[36px]">Event & Experiences</h2>

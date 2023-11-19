@@ -35,21 +35,21 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="#"
+                href="#about"
                 className={` ${activePage === 'about' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('about')}
               >
                 About
               </a>
               <a
-                href="#"
+                href="#Events"
                 className={` ${activePage === 'services' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('services')}
               >
                 Events & Experiences
               </a>
               <a
-                href="#"
+                href="#Gellary"
                 className={` ${activePage === 'contact' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('contact')}
               >
