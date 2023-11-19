@@ -50,3 +50,7 @@
 .slick-slide-gap {
   margin-right: 30px;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+

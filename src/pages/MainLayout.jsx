@@ -4,6 +4,7 @@ import FriendsOfMumbaiSection from "../components/FriendsOfMumbaiSection/Friends
 import WorldRecord from "../components/WorldRecordSection/WorldRecord";
 // import EventSection from "../components/EventSection/EventSection";
 import Navbar from './../components/Navbar/Navbar';
+import About from './../components/About/About';
 
 const MainLayout = () => {
     return (
@@ -11,7 +12,7 @@ const MainLayout = () => {
             <Navbar />
             <BannerSlider />
            <div className="myContainer">
-           {/* <About /> */}
+           <About />
             {/* <EventSection /> */}
             <WorldRecord />
             <FriendsOfMumbaiSection /> 
