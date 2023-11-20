@@ -26,8 +26,9 @@ const MainLayout = () => {
             <CollaborateSection />
             <Sponsor />
             <Partners />
-            <Foolter />
+            
            </div>
+           <Foolter />
             {/* <SlickCarousel className="mb-8" /> */}
         </div>
     );

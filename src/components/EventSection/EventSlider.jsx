@@ -16,7 +16,7 @@ import image6Source from "../../assets/image/event6.png";
 
 const EventSlider = () => {
   return (
-    <div className="lg:ml-[90px] relative md:mt-[-170px]">
+    <div className="lg:ml-[90px] relative md:mt-[-170px] flex flex-row md:justify-start justify-center items-center">
       <Swiper
         spaceBetween={30}      
         autoplay={{
