@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:ml-10 md:flex font-normal text-sm space-x-4 text-black">
               <a
-                href="#"
+                href="/"
                 className={` ${activePage === 'home' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('home')}
               >
