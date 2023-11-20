@@ -1,9 +1,10 @@
-import MainLayout from "./pages/MainLayout";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./components/Router/Router";
 
 function App() {
   return (
     <>
-      <MainLayout />
+      <RouterProvider router={router} />
     </>
   );
 }
