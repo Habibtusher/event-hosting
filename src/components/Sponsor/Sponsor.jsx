@@ -30,7 +30,7 @@ const Sponsor = () => {
             736: {
               slidesPerView: 3,
             },
-            400: {
+            390: {
               slidesPerView: 2,
             },
            

@@ -54,4 +54,16 @@
   display: none;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-scrolling {
+  animation: scroll 30s linear infinite;
+}
 

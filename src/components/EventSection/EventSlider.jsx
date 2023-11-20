@@ -20,7 +20,7 @@ const EventSlider = () => {
   return (
     <div className="lg:ml-[90px] relative md:mt-[-170px] flex flex-row md:justify-start justify-center items-center">
       <Swiper
-        spaceBetween={30}      
+        spaceBetween={10}      
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,

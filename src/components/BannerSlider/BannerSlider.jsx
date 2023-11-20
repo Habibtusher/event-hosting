@@ -6,9 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './BannerStyle.css';
 
-// import './styles.css';
-
-// import required modules
 import { Navigation } from 'swiper/modules';
 
 import videoSource from '../../assets//image/video.mp4';
@@ -16,9 +13,6 @@ import image1Source from '../../assets/image/img1.jpeg';
 import image2Source from '../../assets/image/img2.jpeg';
 
 const BannerSlider = () => {
-
-
-
     return (
         <div className='-z-40 -[mt-30px]'>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">

@@ -14,9 +14,8 @@ import image2Source from "../../../assets/image/mumbai/sachin2.png";
 const FriendsOfMumbaiSlide = () => {
   return (
     <div className="lg:ml-[90px] -mt-[41px]">
-      <Swiper
-      
-        spaceBetween={30}
+      <Swiper     
+        spaceBetween={10}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
