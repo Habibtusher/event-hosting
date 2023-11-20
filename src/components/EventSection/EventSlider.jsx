@@ -16,29 +16,24 @@ import image6Source from "../../assets/image/event6.png";
 
 const EventSlider = () => {
   return (
-    <div className="lg:ml-[90px] relative mt-[-170px]">
+    <div className="lg:ml-[90px] relative md:mt-[-170px]">
       <Swiper
-        slidesPerView={4}  
-        spaceBetween={200}      
+        spaceBetween={30}      
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }} 
         // modules={[Autoplay]}
-        // breakpoints={{
-        //   640: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20,
-        //   },
-        //   768: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 40,
-        //   },
-        //   1024: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 50,
-        //   },
-        // }}       
+        breakpoints={{
+          
+          1024: {
+            slidesPerView: 3,
+        },
+          768: {
+              slidesPerView: 1,
+
+          }
+      }}     
       >
         <SwiperSlide>
           <div>
