@@ -2,9 +2,9 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import logo from "../../assets/image/logo.png";
 
 const Foolter = () => {
@@ -54,7 +54,7 @@ const Foolter = () => {
                       <FaFacebook size={16} />
                     </a>
                     <a href="#" className="text-white">
-                      <FaTwitter size={16} />
+                      <FaXTwitter size={16} />
                     </a>
                     <a href="#" className="text-white">
                       <FaYoutube size={16} />

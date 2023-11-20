@@ -1,4 +1,8 @@
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 import image5Source from "../../../assets/image/mumbai/Screenshot_1.png";
 import image4Source from "../../../assets/image/mumbai/Screenshot_2.png";
@@ -10,22 +14,22 @@ import image2Source from "../../../assets/image/mumbai/sachin2.png";
 const FriendsOfMumbaiSlide = () => {
   return (
     <div className="lg:ml-[90px] -mt-[41px]">
-      <Swiper 
-        spaceBetween={30}      
+      <Swiper
+      
+        spaceBetween={30}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }} 
-     
+        }}
+        modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
         breakpoints={{
-         
           736: {
             slidesPerView: 2,
           },
           1024: {
             slidesPerView: 3,
           },
-        }}       
+        }}
       >
         <SwiperSlide>
           <div>
@@ -41,9 +45,10 @@ const FriendsOfMumbaiSlide = () => {
                     <h2 className="text-[#101257] font-bold text-lg">
                       Anand Mahindra
                     </h2>
-                    <p className="text-sm font-normal">Charman (Mahindra Group)</p>
+                    <p className="text-sm font-normal">
+                      Charman (Mahindra Group)
+                    </p>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -59,9 +64,9 @@ const FriendsOfMumbaiSlide = () => {
               />
               <div className="flex justify-center items-center">
                 <div className="w-[280px] h-[80px] border-x-2 border-b-2 border-gray-300 px-[20px] py-[18px] flex flex-row justify-between items-center rounded-b-[14px] ">
-                <div className="text-center">
+                  <div className="text-center">
                     <h2 className="text-[#101257] font-bold text-lg">
-                     Sachin Tendulkar
+                      Sachin Tendulkar
                     </h2>
                     <p className="text-sm font-normal">Indian Cricketer</p>
                   </div>
@@ -80,11 +85,13 @@ const FriendsOfMumbaiSlide = () => {
               />
               <div className="flex justify-center items-center">
                 <div className="w-[280px] h-[80px] border-x-2 border-b-2 border-gray-300 px-[20px] py-[18px] flex flex-row justify-between items-center rounded-b-[14px] ">
-                <div className="text-center">
+                  <div className="text-center">
                     <h2 className="text-[#101257] font-bold text-lg">
                       Mukesh Ambani
                     </h2>
-                    <p className="text-sm font-normal">Director (Reliance Industries)</p>
+                    <p className="text-sm font-normal">
+                      Director (Reliance Industries)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -101,9 +108,9 @@ const FriendsOfMumbaiSlide = () => {
               />
               <div className="flex justify-center items-center">
                 <div className="w-[280px] h-[80px] border-x-2 border-b-2 border-gray-300 px-[20px] py-[18px] flex flex-row justify-between items-center rounded-b-[14px] ">
-                <div className="text-center">
+                  <div className="text-center">
                     <h2 className="text-[#101257] font-bold text-lg">
-                     Madhuri.Dixit
+                      Madhuri.Dixit
                     </h2>
                     <p className="text-sm font-normal">Actories</p>
                   </div>
@@ -122,7 +129,7 @@ const FriendsOfMumbaiSlide = () => {
               />
               <div className="flex justify-center items-center">
                 <div className="w-[280px] h-[80px] border-x-2 border-b-2 border-gray-300 px-[20px] py-[18px] flex flex-row justify-between items-center rounded-b-[14px] ">
-                <div className="text-center">
+                  <div className="text-center">
                     <h2 className="text-[#101257] font-bold text-lg">
                       Aamir khan
                     </h2>
@@ -141,18 +148,19 @@ const FriendsOfMumbaiSlide = () => {
                 src={image6Source}
                 alt=""
               />
-               <div className="ml-[18px]">
-              <div className="w-[280px] h-[80px] border-x-2 border-b-2 border-gray-300 px-[20px] py-[18px] flex flex-row justify-between items-center rounded-b-[14px] ">
-              <div className="text-center">
+              <div className="ml-[18px]">
+                <div className="w-[280px] h-[80px] border-x-2 border-b-2 border-gray-300 px-[20px] py-[18px] flex flex-row justify-between items-center rounded-b-[14px] ">
+                  <div className="text-center">
                     <h2 className="text-[#101257] font-bold text-lg">
-                     Shankar Mahadeven
+                      Shankar Mahadeven
                     </h2>
-                    <p className="text-sm font-normal">Chairman (Mahindra Group)</p>
+                    <p className="text-sm font-normal">
+                      Chairman (Mahindra Group)
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
-            </div>
-           
           </div>
         </SwiperSlide>
       </Swiper>

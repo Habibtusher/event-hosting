@@ -1,4 +1,8 @@
-// Import Swiper React components
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,6 +18,11 @@ const Partners = () => {
       <div className="-mt-[60px] md:ml-[8%]">
         <Swiper
           spaceBetween={10}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }} 
+          modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
           breakpoints={{
             1024: {
               slidesPerView: 6,

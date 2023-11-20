@@ -1,6 +1,8 @@
-import "swiper/css";
-import "swiper/css/pagination";
-// import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 // import './styles.css';
 // import { Autoplay } from 'swiper/modules';
@@ -23,7 +25,7 @@ const EventSlider = () => {
           delay: 2500,
           disableOnInteraction: false,
         }} 
-        // modules={[Autoplay]}
+        modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
         breakpoints={{
           
           1024: {
