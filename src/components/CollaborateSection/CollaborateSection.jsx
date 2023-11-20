@@ -42,7 +42,7 @@ const CollaborateSection = () => {
         <Images height={150} width={140} src={img4} />
       </div>
       <div>
-        <p className="text-white text-[30px]">Collaborate with us </p>
+        <p className="text-white text-center p-3 text-[20px]">Collaborate with us </p>
       </div>
   
       <div
@@ -53,7 +53,7 @@ const CollaborateSection = () => {
         }}
         className="text-white"
       >
-       <Images height={150} width={140} src={imageRSource} />
+       <Images  height={150} width={140} src={imageRSource} />
         <Images height={150} width={140} src={imageR2Source} />
         <Images height={90} width={140} src={yellow} />
         <Images height={150} width={140} src={image3Source} />

@@ -1,11 +1,5 @@
-import "swiper/css";
-import "swiper/css/pagination";
-// import { Autoplay } from 'swiper/modules';
+
 import { Swiper, SwiperSlide } from "swiper/react";
-// import './styles.css';
-// import { Autoplay } from 'swiper/modules';
-
-
 import image5Source from "../../../assets/image/mumbai/Screenshot_1.png";
 import image4Source from "../../../assets/image/mumbai/Screenshot_2.png";
 import image3Source from "../../../assets/image/mumbai/Screenshot_3.png";
@@ -22,10 +16,10 @@ const FriendsOfMumbaiSlide = () => {
           delay: 2500,
           disableOnInteraction: false,
         }} 
-        // modules={[Autoplay]}
+     
         breakpoints={{
          
-          768: {
+          736: {
             slidesPerView: 2,
           },
           1024: {

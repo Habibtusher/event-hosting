@@ -22,13 +22,13 @@ const About = () => {
       {/* About section start  */}
       <div>
         <div className="md:w-[1080px] w-full m-auto">
-          <div className="flex md:flex-row flex-col justify-between gap-4">
+          <div className="flex  md:flex-row flex-col justify-between gap-4">
             <div className="md:w-1/2 w-full">
-              <h2 className="text-[40px] font-bold colorBlack">
+              <h2 className="text-[30px] font-bold colorBlack">
                 {" "}
                 Everyones invited{" "}
               </h2>
-              <div className="mt-[30px]">
+              <div className="mt-[25px]">
                 <h2 className="text[#101257] font-bold text-[30px]">
                   Sapno ka gateway
                 </h2>
@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </div>
               <div className="mt-[30px]">
-                <h2 className="text[#101257] font-bold text-[30px]">
+                <h2 className="text[#101257] font-bold text-[25px]">
                   Sustainability
                 </h2>
                 <p className="colorBlack font-bold text-[18px]">

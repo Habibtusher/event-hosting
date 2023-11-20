@@ -29,8 +29,8 @@ const EventSlider = () => {
           1024: {
             slidesPerView: 3,
         },
-          768: {
-              slidesPerView: 1,
+          736: {
+              slidesPerView: 2,
 
           }
       }}     

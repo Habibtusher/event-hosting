@@ -67,7 +67,7 @@ const Navbar = () => {
             >
 
             </div>
-            <div className="flex md:mt-0 mt-[60px] flex-col items-center space-y-4 text-black fixed inset-y-0 left-0 w-64 bg-white">
+            <div className="flex md:mt-0 mt-[60px] flex-col pl-3  space-y-4 text-black fixed inset-y-0 left-0 w-64 bg-white">
               <a
                 href="#"
                 className={` ${activePage === 'home' ? 'text-[#E26E39]' : ''}`}
@@ -76,14 +76,14 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="#About"
+                href="#about"
                 className={` ${activePage === 'about' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('about')}
               >
                 About
               </a>
               <a
-                href="#"
+                href="#Events"
                 className={` ${activePage === 'services' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('services')}
               >
