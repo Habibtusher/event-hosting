@@ -7,8 +7,8 @@ import 'swiper/css/pagination';
 
 const Partners = () => {
     return (
-        <div className="md:ml-[5%] md:w-[95%] mb-12 mt-14 container mx-auto">
-            <div className="w-full h-[220px] border-t-2 border-l-2 border-b-2 border-black rounded-l-[30px]  relative">
+        <div className="mb-12 container mx-auto">
+        <div className="md:ml-[5%] md:w-[95%] h-[220px] border-t-2 border-l-2 border-b-2 border-black rounded-l-[30px] relative">
                 <h2 className="font-bold text-[30px] text-center mt-8">Partners</h2>
             </div>
             <div className="-mt-[60px] md:ml-[8%]">

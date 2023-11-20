@@ -16,28 +16,22 @@ import image2Source from "../../../assets/image/mumbai/sachin2.png";
 const FriendsOfMumbaiSlide = () => {
   return (
     <div className="lg:ml-[90px] -mt-[41px]">
-      <Swiper
-        slidesPerView={4}  
-        spaceBetween={200}      
+      <Swiper 
+        spaceBetween={30}      
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }} 
         // modules={[Autoplay]}
-        // breakpoints={{
-        //   640: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20,
-        //   },
-        //   768: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 40,
-        //   },
-        //   1024: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 50,
-        //   },
-        // }}       
+        breakpoints={{
+         
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}       
       >
         <SwiperSlide>
           <div>
