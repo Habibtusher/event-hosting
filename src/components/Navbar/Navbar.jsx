@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-[999]">
       <div className="md:rounded-b-3xl rounded-br-3xl shadow-md bg-white md:w-[1180px] mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 pt-4 pb-4 relative">
+        <div className="flex items-center justify-between  h-16 pt-4 pb-4 relative">
           <div className="flex items-center">
             <div className="text-black font-bold text-xl w-14 h-8">
               <img className="w-full h-full object-cover" src={logo} alt="" />
@@ -59,21 +59,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <div className="md:hidden">
-            {isMobileMenuOpen ? (
-              <IoCloseOutline
-                onClick={closeMobileMenu}
-                className="text-black text-end mt-4 cursor-pointer focus:outline-none"
-                size={30}
-              />
-            ) : (
-              <CiMenuBurger
-                onClick={toggleMobileMenu}
-                className="text-black cursor-pointer focus:outline-none"
-                size={30}
-              />
-            )}
-          </div>
+         
           <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
             <div
               className="fixed inset-0 bg-black bg-opacity-50 -z-[1000]"
@@ -112,7 +98,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <div className="hidden md:flex">
+          <div className="md:flex">
             <div className="flex flex-row justify-center items-center gap-2">
               <span className="text-bold text-[22px] mt-1">
                 <CiTimer />
@@ -125,6 +111,21 @@ const Navbar = () => {
                 <h2 className="mt-[-6px]">LEFT</h2>
               </div>
             </div>
+          </div>
+          <div className="md:hidden">
+            {isMobileMenuOpen ? (
+              <IoCloseOutline
+                onClick={closeMobileMenu}
+                className="text-black text-end mt-4 cursor-pointer focus:outline-none"
+                size={30}
+              />
+            ) : (
+              <CiMenuBurger
+                onClick={toggleMobileMenu}
+                className="text-black cursor-pointer focus:outline-none"
+                size={30}
+              />
+            )}
           </div>
         </div>
       </div>
