@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { CiTimer } from "react-icons/ci";
-import logo from "../../assets/image/logo.png";
-
+import { CiMenuBurger, CiTimer } from 'react-icons/ci';
+import { IoCloseOutline } from 'react-icons/io5';
+import logo from '../../assets/image/logo.png';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,10 +22,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-[999]">
-      <div className="rounded-b-3xl shadow-md bg-white w-[1180px] mx-auto w px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 pt-4 pb-4">
+      <div className="rounded-b-3xl shadow-md bg-white md:w-[1180px] mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 pt-4 pb-4 relative">
           <div className="flex items-center">
-            <div className="text-black font-bold text-xl w-14 h-8"><img className='w-full h-full object-cover' src={logo} alt="" /></div>
+            <div className="text-black font-bold text-xl w-14 h-8">
+              <img className="w-full h-full object-cover" src={logo} alt="" />
+            </div>
             <div className="hidden md:ml-10 md:flex font-normal text-sm space-x-4 text-black">
               <a
                 href="#"
@@ -53,20 +55,33 @@ const Navbar = () => {
                 className={` ${activePage === 'contact' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('contact')}
               >
-                Gellary
+                Gallery
               </a>
             </div>
           </div>
           <div className="md:hidden">
-            <button
-              onClick={toggleMobileMenu}
-              className="text-black focus:outline-none"
-            >
-              Menu
-            </button>
+            {isMobileMenuOpen ? (
+              <IoCloseOutline
+                onClick={closeMobileMenu}
+                className="text-black mt-4 cursor-pointer focus:outline-none"
+                size={30}
+              />
+            ) : (
+              <CiMenuBurger
+                onClick={toggleMobileMenu}
+                className="text-black cursor-pointer focus:outline-none"
+                size={30}
+              />
+            )}
           </div>
           <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-            <div className="flex flex-col items-center space-y-4 text-black">
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 -z-[1000]"
+              onClick={closeMobileMenu}
+            >
+              
+            </div>
+            <div className="flex md:mt-0 mt-[60px] flex-col items-center space-y-4 text-black fixed inset-y-0 left-0 w-64 bg-white">
               <a
                 href="#"
                 className={` ${activePage === 'home' ? 'text-[#E26E39]' : ''}`}
@@ -75,7 +90,7 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="#"
+                href="#About"
                 className={` ${activePage === 'about' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('about')}
               >
@@ -89,19 +104,22 @@ const Navbar = () => {
                 Events & Experiences
               </a>
               <a
-                href="#"
+                href="#Gallery"
                 className={` ${activePage === 'contact' ? 'text-[#E26E39]' : ''}`}
                 onClick={() => handlePageClick('contact')}
               >
-                Gellary
+                Gallery
               </a>
             </div>
           </div>
           <div className="hidden md:flex">
-             <div className="flex flex-row justify-center items-center gap-2">
-              <span className='text-bold text-[22px] mt-1'><CiTimer /></span>
-              <h2 className="text-[#E26E39] text-bold text-[36px]">  <span></span>
-                25</h2>
+            <div className="flex flex-row justify-center items-center gap-2">
+              <span className="text-bold text-[22px] mt-1">
+                <CiTimer />
+              </span>
+              <h2 className="text-[#E26E39] text-bold text-[36px]">
+                <span></span> 25
+              </h2>
               <div className="text-[16px] font-bold">
                 <h1>DAYS</h1>
                 <h2 className="mt-[-6px]">LEFT</h2>

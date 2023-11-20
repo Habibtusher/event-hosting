@@ -1,0 +1,18 @@
+/* Navbar.css */
+
+.mobile-menu {
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.mobile-menu.open {
+  max-height: 300px; /* Set the maximum height you desire */
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 1;
+}
