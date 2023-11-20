@@ -53,7 +53,7 @@ const Foolter = () => {
                     <a href="#" className="text-white text-base">
                       <FaFacebook size={16} />
                     </a>
-                    <a href="#" className="text-white">
+                    <a target="blank" href="https://twitter.com/mumbai_festival" className="text-white">
                       <FaXTwitter size={16} />
                     </a>
                     <a href="#" className="text-white">
