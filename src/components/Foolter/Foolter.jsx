@@ -3,8 +3,8 @@ import logo from '../../assets/image/logo.png';
 
 const Foolter = () => {
     return (
-       <div className="md:myContainer">
-        <div className="w-full text-sm bg-[#000] text-white mt-20 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 rounded-t-[30px] pb-10">
+       <div className="md:w-[1260px] w-full mx-auto">
+        <div className="text-sm bg-[#000] text-white mt-20 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 rounded-t-[30px] pb-10">
         <div className='flex flex-col md:flex-row justify-between pt-10 pb-10'>
           <div className="w-full md:w-1/2">
             <div className='flex flex-col md:flex-row gap-4'>
