@@ -3,7 +3,7 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 const FriendsOfMumbaiSection = () => {
   return (
     <div className="mt-[70px] mb-10">
-      {/* Friends Of Mumbai Header Section  */}
+    
       <div className="w-full md:w-[1100px] rounded-3xl md:rounded-[40px] mx-auto bg-black h-full md:h-[125px]">
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:pt-[40px] py-10 md:py-0 pl-10 pr-28">
           <div>
